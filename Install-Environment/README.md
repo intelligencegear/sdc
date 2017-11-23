@@ -27,34 +27,34 @@ First of all, assuming we are using Ubuntu 16.04.
 * Download latest Miniconda from https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/. Install it.
 
 * Change install software dependencies(GPU version) like below:
-```shell
-name: carnd-term1
-channels:
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-dependencies:
-    - python==3.5.2
-    - numpy
-    - matplotlib
-    - jupyter
-    - opencv3
-    - pillow
-    - scikit-learn
-    - scikit-image
-    - scipy
-    - h5py
-    - eventlet
-    - flask-socketio
-    - seaborn
-    - pandas
-    - ffmpeg
-    - imageio=2.1.2
-    - pyqt=4.11.4
-    - pip:
-        - moviepy
-        - https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-linux_x86_64.whl
-        - keras==1.2.1
-```
+  ````shell
+  name: carnd-term1
+  channels:
+      - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
+      - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  dependencies:
+      - python==3.5.2
+      - numpy
+      - matplotlib
+      - jupyter
+      - opencv3
+      - pillow
+      - scikit-learn
+      - scikit-image
+      - scipy
+      - h5py
+      - eventlet
+      - flask-socketio
+      - seaborn
+      - pandas
+      - ffmpeg
+      - imageio=2.1.2
+      - pyqt=4.11.4
+      - pip:
+          - moviepy
+          - https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp35-cp35m-linux_x86_64.whl
+          - keras==1.2.1
+  ````
 
 * Add snippet below into ~/.pip/pip.conf
 
