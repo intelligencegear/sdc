@@ -195,13 +195,14 @@ The code for making predictions on my final model is located in the *18-th* cell
 The details of top five predictions belongs to the fist five images is provided below:
 
 1. For the 1-st image, the model is relatively sure that this is a *Going Straight or Left* (probability of 0.964), and the image does contain '*Going Straight or Left*'. The top five soft max probabilities were
-  | Probability         	|     Prediction	        					|
-  |:---------------------:|:---------------------------------------------:|
-  | .964         			| Going Straight or Left  									|
-  | .012     				| Keep left 										|
-  | .007					| General caution											|
-  | .003	      			| Turn right ahead					 				|
-  | .002				    | Ahead only     							|
+
+| Probability         	|     Prediction	        					|
+|:---------------------:|:---------------------------------------------:|
+| .964         			| Going Straight or Left  									|
+| .012     				| Keep left 										|
+| .007					| General caution											|
+| .003	      			| Turn right ahead					 				|
+| .002				    | Ahead only     							|
 
 
 2. For the 2-nd image, the model is relatively sure that this is a *No passing for vehicles over 3.5 metric tons* (probability of 1.000), and the image does contain '*No passing for vehicles over 3.5 metric tons*'. The top five soft max probabilities were
