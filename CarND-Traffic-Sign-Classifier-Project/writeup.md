@@ -181,7 +181,7 @@ Here are the results of the prediction:
 | Dangerous curve to the right | Dangerous curve to the right | Y |
 | Speed limit (20km/h) | Speed limit (20km/h) | Y |
 
-The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. The accuracy of the model on the test set is much higher (95.4%) than the accuracy of this data set retrieval from web, the main reason may depend on the following two aspects:
+The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. The accuracy of the model on the test set is much higher (95.4%) than the accuracy of this data set collected from web, the main reason may depend on the following two aspects:
   * The web data set only contains 10 images, thus the accuracy given by this data set may not be trusted.
 
   * The images that predicting incorrect is very unclear and also hard to classified by human beings.
