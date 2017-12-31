@@ -144,7 +144,7 @@ The 1-st image might be easy to classify.
 
 The 2-nd image might be difficult to classify because it not very clear.
 
-The 3-th image might be difficult to classify because it not very clear.
+The 3-rd image might be difficult to classify because it not very clear.
 
 The 4-th image might be difficult to classify because it not very clear.
 
