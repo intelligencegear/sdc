@@ -58,12 +58,14 @@ From the figure we can see that the three sets of data roughly belong to the sam
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
 
-I experimented with 2 methods for data preprocessing:
-* I experimented with normalizing the data from [0,255] to [0,1] or [-1,1], but the correctness of the validation set did not improve.
+I have experimented with 2 methods for data preprocessing that may be not working for my classification model:
+* I have experimented with normalizing the data from [0,255] to [0,1] or [-1,1], but the correctness of the validation set did not improve.
 
-* I experimented with data augmentation by adjusting the brightness of the picture, rotate the picture within a certain range, but the correctness of the validation set also did not improve.
+* I have experimented with data augmentation by adjusting the brightness of the picture, rotate the picture within a certain range, but the correctness of the validation set also did not improve.
 
-At last, in the final version of the code, I removed both above methods, because they increased the time complexity, but did not bring benefits for the classification model.
+At last, in the final version of the code, I removed both above methods, because they increased the time complexity, but did not bring any benefits for the classification model.
+
+Also, I have test shuffle technique in model training process, it did have been proven a very useful technique for enhance the accuracy of validation set.
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
