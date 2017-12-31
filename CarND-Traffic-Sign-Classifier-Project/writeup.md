@@ -88,7 +88,8 @@ My final model consisted of the following layers:
 | Fully connected		    | Inputs 120, outputs 84        	  |
 | RELU					        |										                |
 | Dropout               | keep_prob=0.5                     |
-| Softmax				        | Inputs 84, outputs 43        			|
+| Fully connected		    | Inputs 84, outputs 43        	    |
+| Softmax				        | Cross entropy with logits         |
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
