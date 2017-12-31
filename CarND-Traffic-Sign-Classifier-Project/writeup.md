@@ -256,7 +256,7 @@ The details of top five predictions belongs to the fist five images is provided 
 
 ![alt text][image6]
 
-* Relu layer: background noise has been significantly reduced and important shapes are kept.
+* RELU layer: background noise has been significantly reduced and important shapes are kept.
 
 ![alt text][image7]
 
