@@ -117,13 +117,13 @@ My final model results were:
 
 ![alt text][image2]
 
-I used the well known LeNet-5 architecture with L2-Regularization and Dropout the traffic sign classification problem since it is has been proven although very simple but very effective for computer vision applications.
+I used the well known LeNet-5 architecture with L2-Regularization and Dropout for the traffic sign classification problem since it is has been proven although very simple but very effective for computer vision applications.
 
 In the training process:
 
 * Firstly, I plotted the **Loss VS Accuracy** changing trends of training process, as shown above, to make sure the classification model is not over-fitting or under-fitting. In my opinion, this step was *very effective* for fine tunning models.
 
-* Secondly, I use **Xavier initializer**, **Adam optimizer** and **L2-Regularization** and tune learning rate and lambda coefficient parameters. The first version model, throught cross validation result, I believe the model is overfitting. After several round of parameters tunning processing, throught cross validation technique, I already got the accuracy of *meeting requirements in validation set*.
+* Secondly, I use **Xavier initializer**, **Adam optimizer** and **L2-Regularization** and tune learning rate and lambda coefficient parameters. The first version model, through cross validation result, I believe the model is over-fitting. After several round of parameters tunning processing, through cross validation technique, I already got the accuracy of *meeting requirements in validation set*.
 
 * Thirdly, I add **dropout** layers after every convolution layer, fully connected layer. Through cross validation technique, I got final *keep probabilities* for every dropout layer. This step gave a *huge improvement* and increased the accuracy of validation set *at least 3 points*.
 
