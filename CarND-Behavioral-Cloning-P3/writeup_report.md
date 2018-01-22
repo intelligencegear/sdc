@@ -45,7 +45,7 @@ Using the Udacity provided simulator and my **modified** drive.py file, the car 
 ```sh
 python drive.py nvida_model.h5
 ```
-** or **
+**or**
 
 ```sh
 python drive.py lenet5_model.h5
@@ -64,13 +64,13 @@ In this project, I have implemented two models, including Nvidia end to end mode
 
   My model consists a series of convolutional layers, which including first three convolutional layers with a 2×2 stride and a 5×5 kernel and a non-strided convolution with a 3×3 kernel size in the last two convolutional layers(model.py lines 182-186).  
 
-  The model includes ELU(Exponential Linear Units) layers to introduce nonlinearity(model.py 182-186) , and data is cropped, normalized and resized in model using Keras lambda layer(model.py 173-179).
+  The model includes ELU(Exponential Linear Units) layers to introduce nonlinearity(model.py 182-186) , and data is cropped, normalized and resized in model using Keras lambda layer(model.py lines 173-179).
 
 * **LeNet-5 model**
 
   My model consists of a convolution neural network with 5x5 filter sizes and depths between 6 and 16 (model.py lines 258-263).
 
-  The model includes RELU layers to introduce nonlinearity(model.py lines 258-263),  and data is cropped, normalized and resized in model using Keras lambda layer(model.py 249-255).
+  The model includes RELU layers to introduce nonlinearity(model.py lines 258-263),  and data is cropped, normalized and resized in model using Keras lambda layer(model.py lines 249-255).
 
   Since **LeNet-5 model** is very common and standard, for convenience, we will only describe the **Nvidia model** in deitals when there is no significant difference between the two models.
 
@@ -82,7 +82,7 @@ The **Lenet-5 model** contains two dropout layers in order to reduce overfiting(
 
 Although **Nvidia model** make the car drive more smoothly, however, the **Lenet-5 model** could also make the car stay on the track.
 
-The models was trained and validated on different data sets to ensure that the model was not overfitting (code line 221, 298). The models was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The models was trained and validated on different data sets to ensure that the model was not overfitting (model.py line 221, 298). The models was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 #### 3. Model parameter tuning
 
@@ -133,7 +133,7 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
   * 4 fully connected layers that designed to function as a controller for predicting steering angle.
 
-  <center>![alt text][image1]</center>
+  ![alt text][image1]
 
 * **LeNet-5 model**
 
@@ -145,7 +145,7 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
   * 3 fully connected layers that designed to function as a controller for predicting steering angle.
 
-  <center>![alt text][image2]</center>
+  ![alt text][image2]
 
 #### 3. Creation of the Training Set & Training Process
 
@@ -154,7 +154,7 @@ First of all, it is important to emphasize that the creation of a data set is no
 
 Since I have not joystick and the quality of data collected by myself is very hard to guarantee, I just download the data set provided by Udacity to avoid something like *garbage in then garbage out*. After simply plotting, as shown as below, I found that the data distribution is very skewed.
 
-<center>![alt text][image3]</center>
+![alt text][image3]
 
 The data set contains 8036 samples from center cameras and the data mainly distributed around zero. Learning through Udacity class, I realized that data augmentation techniques were very effective ways to solve this type of problem. Five data augmentation techniques were employed in this project:
 
@@ -170,7 +170,7 @@ The data set contains 8036 samples from center cameras and the data mainly distr
 
 There is a demo of a image argumentation(flip randomly, translate randomly, add shadow randomly, adjust brightness randomly) as shown below:
 
-<center>![alt text][image4]</center>
+![alt text][image4]
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set.
 
