@@ -114,7 +114,7 @@ For details about how I created the training data, see the next section.
 As mentioned above, I have implemented two models for this project, including **Nvidia model** and **LeNet-5 model**. These two pipelines is not too complex when using Keras to build up. Compared with the original models, only a few extra dropout layer was added in my implementation. The dropout and early stopping strategy are very common techniques that can help the model avoid the overfitting.
 
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set using tools provided by sklearn package(model.py 221, 298). By the way, the image data in training is augmented while the validation is not, the error of training is little more larger than that of validation since the augmentation was not very perfect compared with the original distribution.
+In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set using tools provided by sklearn package(model.py lines 221, 298). By the way, the image data in training is augmented while the validation is not, the error of training is little more larger than that of validation since the augmentation was not very perfect compared with the original distribution.
 
 
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track when the car went through in some sharp turn. To improve the driving behavior in these cases, I make a little larger **the correction of images recorded by left and right cameras**(model.py lines 56-58). After several experiments, I chose **0.25** for Nvidia model and **0.5** for LeNet-5 model.
