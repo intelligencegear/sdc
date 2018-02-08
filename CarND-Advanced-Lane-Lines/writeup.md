@@ -151,11 +151,9 @@ Also, I have implemented a function called `test pipeline()` in the 10th code ce
 
 Here's a [link to my debug video result, which includes main processing steps in the pipeline](./output_videos/project_detection_debug_video.mp4)
 
-![alt text][video1]
 
 Here's a [link to my final video result](./output_videos/project_detection_video.mp4)
 
-![alt text][video2]
 
 ---
 
