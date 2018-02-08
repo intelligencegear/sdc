@@ -28,9 +28,8 @@ The goals / steps of this project are the following:
 [image11]: ./output_images/test_pipeline_3.png "Test Pipeline"
 [image12]: ./output_images/test_pipeline_4.png "Test Pipeline"
 [image13]: ./output_images/original.png "Original Example"
-
-
-<!-- [video1]: ./project_video.mp4 "Video" --> -->
+[video1]: ./output_videos/project_detection_debug_video.mp4 "Debug Video"
+[video2]: ./output_videos/project_detection_video.mp4 "Detection Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -152,7 +151,11 @@ Also, I have implemented a function called `test pipeline()` in the 10th code ce
 
 Here's a [link to my debug video result, which includes main processing steps in the pipeline](./output_videos/project_detection_debug_video.mp4)
 
+![alt text][video1]
+
 Here's a [link to my final video result](./output_videos/project_detection_video.mp4)
+
+![alt text][video2]
 
 ---
 
