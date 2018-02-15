@@ -203,11 +203,11 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spat
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 
-I used the [test video](./test_video.mp4) to test my *car vs noncar* classifier and the sliding window search algorithm. Here's a [link to my debug video result](./output_videos/test_video_output.mp4). The left side of the output video of the `test_video.mp4` is final result of the detection pipeline, and the right side is the result of the sliding window search.
+* I used the [test video](./test_video.mp4) to test my *car vs noncar* classifier and the sliding window search algorithm. Here's a [link to my debug video result](./output_videos/test_video_output.mp4). The left side of the output video of the `test_video.mp4` is final result of the detection pipeline, and the right side is the result of the sliding window search.
 
-![alt text][debug_video]
+  ![alt text][debug_video]
 
-**Here's a [link to my final video result](./output_videos/project_video_output.mp4). Please check:)**
+* **Here's a [link to my final video result](./output_videos/project_video_output.mp4). Please check:)**
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 
